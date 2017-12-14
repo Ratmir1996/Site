@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Дополнительная информация о странице -->
+	<meta charset = "UTF-8"> <!-- Код кодировки который включает большинство языков мира -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Отображение сайта на устройстве-->
+	<meta name="keywords" content=""><!--Ключючевые слова страницы для поисковой страницы-->
+	<meta name ="description" content=""> <!--Описание под ссылкой на страницу-->
+	<meta name ="boutibule" lang="ru" content =""><!--кто создал страницу -->
+	<link rel="shortcut icon" href="img/favicon.ico"><!-- Устанавливаем фавиконку-->
+	<title>BOUTIBULE</title> <!--Наименование вкладки -->
+    <link rel = 'stylesheet' href = "bootstrap/css/bootstrap.css">
+	<link rel= "stylesheet" href = "style/style.css"> <!--Ссылка на css файл  -->
+       
+       <!--[endif]-->
+    <!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src = "https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+   
+    </head>
+    <body>
+        
+        <div class = 'Form' id = 'form'>
+            <div class = "WindowForm">
+                <span class = "close" >&times;</span>
+                <span class = "ModalText"> <p>Закажите и мы перезвоним<br> в течении минуты!</p></span>
+                <form action="php/form.php" method="post">
+                    <input class = "input" name = "Name" type="text" placeholder="Введите ваше имя">
+                    <input class = "input" name = "Phone" type="text" placeholder=" Введите номер телефона">
+                <button  class = "ButtonForm" type="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+     <div class = "header">
+        <div class = "placeholder">
+            <img src = "img/png/placeholder.png">
+            <p> г.Химки, ул.Юбилейный проспект д.4 </p>
+        </div>
+        <div class = "HeadContacts">
+            <img src = "img/png/phone-call.png"> 
+            <p>8-916-505-44-81<br> WhatsApp, Viber, Telegram</p>
+         </div>
+         <div class = "HeadContactsTwo">
+            <img src = "img/png/phone-call.png"> 
+            <p>8-916-752-33-07 <br>WhatsApp, Viber,Telegram</p>
+         </div>
+        <div class = "Content-1" id = "one">
+            <div class = "container head">
+                <a href = "index.html">
+                    <h1>boutibule</h1>
+                    <h3>high quality</h3>
+                </a>
+            </div>
+            <div class = "ContactsHead"></div>
+        </div>
+        <div class = "Content-2">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "navbar navbar-defalt">
+                        <div class = "container" id = lineContainer>
+                            <div class = "navbar-header">
+                                <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#responsive-menu">
+                                    <span class = "sr-only"> Открыть навигацию</span>
+                                    <span class = "icon-bar"></span>
+                                    <span class = "icon-bar"></span>
+                                    <span class = "icon-bar"></span>
+                                </button>
+                                <a class = "navbar-brand" href = "#"><h1>boutibule</h1></a>
+                            </div>
+                            <div class = "collapse navbar-collapse" id = "responsive-menu">
+                                <ul class = "nav navbar-nav">
+                                    <li>
+                                        <a href = "index.html">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href = "catal.html" >Каталог</a>
+                                    </li>
+                                    <li>
+                                        <a href = "aboutUs.html">О Розе</a>
+                                    </li>
+                                    <li>
+                                        <a href = "contacts.html">Контакты</a>
+                                    </li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div> 
+        <div class = "Content-3">
+        <div class = "CarouselBack">
+           <span>Роза - подарит счастье и радость вам и вашим близким.<br>Мы - обеспечим высокое качество и 5 лет гарантии.</span>
+           <div class = "BackButton" id = "backButton">
+               <p>Заказать сейчас</p>
+           </div>
+       </div> 
+        <div id = "carousel" class = "carousel slide">
+                <!-- Слайды -->
+            <div class = "carousel-inner">
+                <div class = "item active">
+                    <img src="img/slide1-min.jpg"  alt =''>
+                    <div class = "carousel-caption"></div><!-- Описание слайда-->
+                </div>
+                <div class = "item">
+                    <img src="img/slide2-min.jpg"  alt =''>
+                    <div class = "carousel-caption"></div><!-- Описание слайда-->
+                </div>
+                <div class = "item">
+                    <img src="img/slide3-min.jpg"  alt =''>
+                    <div class = "carousel-caption"></div><!-- Описание слайда-->
+                </div>
+                <div class = "item">
+                    <img src= "img/slide4-min.jpg"  alt =''>
+                    <div class = "carousel-caption"></div><!-- Описание слайда-->
+                </div>
+            </div>
+                <!-- Стрелки переключения слайдов-->
+            <a href = "#carousel" class = "left carousel-control" data-slide = "prev">
+                <span class = "glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href = "#carousel" class = "right carousel-control" data-slide = "next">
+                <span class = "glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <div class = "Content-4">
+        <div class = 'footerBack'>
+            <h1>&copy;Boutibule</h1>
+             <span class = 'social'>
+                <p> Мы в социальных сетях:</p>
+                <img src = "img/png/viber.png">
+                <img src = "img/png/whatsapp.png">
+                <img src = "img/png/telegram.png">
+                <a href = 'https://www.instagram.com/boutibule/' target="_blank" id = "inst">
+                <img src = "img/png/insta.png"></a>
+            </span>
+            <div class = "navFooter">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catal.html">Каталог</a></li>
+                    <li><a href="aboutUs.html">О Розе</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript">
+            var modal = document.getElementById('form');
+            var btn = document.getElementById('backButton');
+            var close = document.getElementsByClassName('close')[0];
+            btn.onclick = function openModal(){
+                modal.style.display = "block";
+            };
+            close.onclick = function closeModal(){
+                modal.style.display = 'none';
+            };
+            window.onclick = function func(event){
+                if(event.target == modal){
+                    modal.style.display = "none";
+                }
+            };
+        
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#form").submit(function(){
+                    $.ajax({
+                        type: "POST",
+                        url: "php/form.php",
+                        data: $(this).serialize()
+                    }).done(function(){
+                        alert("Спасибо за заявку!Скоро мы с вами свяжемся.")
+                    });
+                    return false;
+                });
+            });
+        </script>
+            
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    
+    </body>
+</html>
