@@ -51,37 +51,37 @@ var image = document.getElementById('ContentCarsDetails').querySelector("img");
 
 
 textLeftContent0.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoAСPP.jpg");
+    image.setAttribute("src", "Img/auto/autoAСPP-min.jpg");
 };
 textLeftContent1.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoEngine.jpg");
+    image.setAttribute("src", "Img/auto/autoEngine-min.jpg");
 };
 textLeftContent2.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoCold.jpg");
+    image.setAttribute("src", "Img/auto/autoCold-min.jpg");
 };
 textLeftContent3.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoElectronics.jpg");
+    image.setAttribute("src", "Img/auto/autoElectronics-min.jpg");
 };
 textLeftContent4.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoBreak.jpg");
+    image.setAttribute("src", "Img/auto/autoBreak-min.jpg");
 };
 textLeftContent5.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoSuspension.jpg");
+    image.setAttribute("src", "Img/auto/autoSuspension-min.jpg");
 };
 textRightContent0.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoTireService.jpg");
+    image.setAttribute("src", "Img/auto/autoTireService-min.jpg");
 };
 textRightContent1.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoComputerDiagnosis.jpg");
+    image.setAttribute("src", "Img/auto/autoComputerDiagnosis-min.jpg");
 };
 textRightContent2.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoTO.jpg");
+    image.setAttribute("src", "Img/auto/autoTO-min.jpg");
 };
 textRightContent3.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoSecurit.jpg");
+    image.setAttribute("src", "Img/auto/autoSecurit-min.jpg");
 };
 textRightContent4.onmousemove = function(){
-    image.setAttribute("src", "Img/auto/autoOtherWorks.jpg");
+    image.setAttribute("src", "Img/auto/autoOtherWorks-min.jpg");
 };
 
 //-----------------------ScrolMenu-------------------------
