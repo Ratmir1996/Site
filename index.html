@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Отправка форм AJAX</title>
-</head>
-<body>
-	<form id="form">
-		<input type="text" name="name" placeholder="Ваше имя" required /><br />
-		<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
-		<button>Отправить</button>
-	</form>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
-	<script src="common.js"></script>
-</body>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = ''>
+    <title>Form Ajax</title>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+</head> 
+ <body> 
+     <form id="form">
+         <input type="text" name="name" placeholder="Имя" required><br>
+         <input type="text" name="phone" placeholder="Телефон" required><br>
+         <button type="submit">отправить</button>
+     </form>
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $("#form").submit(function(){
+                $.ajax({
+                    type: "POST",
+                    url: "form.php",
+                    data: $(this).serialize()
+                }).done(function(){
+                    alert("Спасибо за заявку! скоро мы с вами сяжемся. ");
+                });
+                return false;
+            });
+        });
+     </script>
+ </body> 
 </html>
