@@ -111,27 +111,46 @@ table {
     float: right;
     width: 2.5vw;
 }
-.carousel-control{
-    z-index: 3;
-    height:100%;
-    margin-top: 9%;
+#slides{
+    position: relative;
+    height: 660px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 }
-.CarouselBack{
-    text-align: center;
+.slide{
     position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.3);
-    z-index: 2;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
 }
-.CarouselBack span{
-    display: inline-block;
-    z-index: 2;
-    color: white;
-    font-size: 2.5em;
+.showing{
+    opacity: 1;
+    z-index: 1;
 }
-.item img{
-    width: 100%;
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background-image: url(../Img/Slides/slide1-min.png);
+    background-size: 100% 100%;
+}
+.slide:nth-of-type(2){
+    background-image: url(../Img/Slides/slide2-min.png);
+    background-size: 100% 100%;
+}
+.slide:nth-of-type(3){
+    background-image: url(../Img/Slides/slide3-min.png);
+    background-size: 100% 100%;
 }
 /*--------------------Form-----------------*/
 .BtnSailForm{
@@ -144,6 +163,7 @@ table {
     background-color: rgba(223,151,66, .8);
     border-radius: 40px;
     cursor: pointer;
+    z-index: 2;
 }
 .BtnSailForm:hover{
      background-color: rgba(184,123,54, .8);
@@ -254,7 +274,7 @@ table {
     position: absolute;
     right: 5%;
 }
-/*--------------Services-----------*/
+/*------------------Services-----------------*/
 #services{
     height: 43vw;
     position: relative;
@@ -309,7 +329,7 @@ table {
     left: 50px;
     top: 200px;
     background-color: rgba(0,0,0,.5);
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     border-radius: 10px;
     text-align: center;
@@ -353,7 +373,13 @@ table {
 
 @media screen and (max-width:1400px)and (min-width:1000px){
     #header{
-        height: 10vw;
+        height: 8vw;
+    }
+    #header h1 a{
+        font-size: 4.5vw;
+    }
+    #nav li a{
+        font-size: 1.2vw;
     }
     #aboutUs{
         height: 50vw;
@@ -365,4 +391,7 @@ table {
         line-height: 30px;
         font-size: 1em;
 }
+    #footer{
+        height: 13vw;
+    }
 } 

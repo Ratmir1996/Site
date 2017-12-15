@@ -31,7 +31,15 @@
 //};
 //------------------------carousel--------------------------
 
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,8000);
 
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
 //-----------------ServicesCars--------------
 
 var LeftContent = document.querySelector('.LeftContent'),
@@ -155,3 +163,11 @@ BtnSailForm.onclick = function(){
 closeForm.onclick = function(){
     form.style.display = "none";
 };
+
+//-------------Map------------
+
+var frameMap = document.querySelector('frame');
+
+frame.addEventListener = ("wheel", function(event){
+    event.preventDefault;
+}, false);
