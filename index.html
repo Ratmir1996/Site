@@ -1,142 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <!-- saved from url=(0014)about:internet -->
-<!--        <meta name="viewport" content="width=divice-width, itial-scale=1">-->
-        <link rel="stylesheet" href="style/bootstrap.css">
-        <link rel="stylesheet" href="style/main.css">
-        <link rel="icon" href="Img/icon/favicon.gif">
-<!--        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">-->
-        <title> RemCar </title>        
-    </head>
-    <body>
-       <div id="header">
-           <h1><a href="#">REMCAR</a></h1>
-           <div id="nav">
-               <ul>
-                   <li><a href="#" class="activeLi">Главная</a></li>
-                   <li><a href="#aboutUs">О нас</a></li>
-                   <li><a href="#services">Услуги</a></li>
-                   <li><a href="#contacts">Контакты</a></li>
-               </ul>
-           </div>
-<!--
-           <div id="nav">
-               <ul>
-                   <li class="activeLi">Главная</li>
-                   <li>О нас</li>
-                   <li>Услуги</li>
-                   <li>Контакты</li>
-               </ul>
-           </div>
--->
-           <div id="phone">
-                <img id="phoneCall" src="Img/icon/Header/phone.png">
-                <img id="whatsAppCall" src="Img/icon/Header/whatsapp.png">
-                <p>+7 (903) 200-07-73<br>+7 (916) 289-57-93</p>
-           </div>
-       </div>
-        <ul id="slides">
-            <li class="slide showing"></li>
-            <li class="slide"></li>
-            <li class="slide"></li>
-            <div class = "BtnSailForm" id = "BtnSailForm">
-               <p>Связаться с мастером</p>
-            </div>
-<!-- *******************************************************-->
-            <div class = 'Form' id = 'form'>
-                <div class = "WindowForm">
-                    <span class = "close" >&times;</span>
-                    <span class = "ModalText"> <p>Укажите нужную нам информацию,<br>чтобы оперативно решить вашу проблему!</p></span>
-                    <form action="php/form.php" method="post">
-                        <input class = "input" name = "Name" type="text" placeholder="Введите ваше имя">
-                        <input class = "input" name = "Phone" type="text" placeholder=" Введите номер телефона">
-                        <input class = "input" name = "Servise" type="text" placeholder=" Введите вид поломки">
-                        <button  class = "ButtonForm" type="submit">Оставить  заявку</button>
-                    </form>
-                </div>
-            </div>
-        </ul>
-       <div id="aboutUs">
-           <div class="row">
-              <div class="col-md-4 left">
-                 <div class="OneblockLeft">
-                      <img src="Img/icon/AboutUs/AboutUsSail.png" alt="sail">
-                      <p>Компания RemCar уже более 8 лет работает на рынке услуг сервиса автомобилей различных марок</p>
-                  </div>
-                  <div class="TwoBlockLeft">
-                      <img src="Img/icon/AboutUs/AboutUsSummary.png" alt="summary">
-                      <p>Квалифицированный персонал, <br>который найдет подход к любому нашему клиенту</p>
-                  </div>
-              </div>
-              <div class="col-md-4 center">
-                  <img src="Img/icon/AboutUs/AbourUsHideQuality.png" alt="quality">
-                  <p>Высокое качество обслуживание наших клиентов</p>
-              </div>
-              <div class="col-md-4 right">
-                 <div class="OneBlockRight">
-                      <img src="Img/icon/AboutUs/AboutUsCar.png" alt="auto">
-                      <p>Широкий спектр услуг по ремонту<br> автомобилей</p>
-                  </div>
-                  <div class="TwoBlockRight">
-                      <img src="Img/icon/AboutUs/AboutUsMAp.png" alt="map">
-                      <p>Удобное территориальное расположение<br> автосервиса в Москве</p>
-                  </div>
-              </div>
-        </div>
-       </div>
-       <div id="services">
-            <div id="blockCarsServices">
-                <div class="blockServicesContetn LeftContent">
-                    <p>АКПП/МКПП</p>
-                    <p>Двигатель</p>
-                    <p>Система охлаждения</p>
-                    <p>Электрика</p>
-                    <p>Тормозная система</p>
-                    <p>Система подрессорирования</p>
-                </div>
-                <div id="ContentCarsDetails">
-                    <img class="auto" src="Img/auto/auto.jpg">
-                </div>
-                <div class="blockServicesContetn RightContent">
-                    <p>Шиномонтаж</p>
-                    <p>Компьютерная диагностика</p>
-                    <p>Техническое обслуживане</p>
-                    <p>Противоугонная система</p>
-                    <p>Иные работы любой сложности</p>
-                </div>
-            </div>
-       </div>
-       <div id="contacts">
-           <div id = "map" class = "map">
-               <div class="Contacts">
-                   <h2>Контакты</h2>
-                    <p class="TextOne">
-                       +7-903-200-07-73 <br><br>
-	                   +7 916-289-57-93
-                    </p>
-                    <p class="TextTwo">
-                        RemCarServices@yandex.ru <br><br>
-                        Москва, Ижорский пр-д 5.
-                    </p>
-               </div> 
-                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad34eafb8ff82d892448f626b4d4ae73c75fef722393d1af170bc994c9c2786d3&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script> 
-           </div>
-           
-       </div>
-       <div id="footer">
-           <h2>REMCAR</h2>
-           <div class="blockIcon">
-               <a href="https://vk.com/remcar_5" target="_blank"><img src="Img/icon/Footer/vk.png"></a>
-               <img src="Img/icon/Footer/telegramm.png">
-               <img src="Img/icon/Footer/icons8-WhatsApp-100.png">
-               <a href="https://www.instagram.com/remcar_5/" target="_blank"><img src="Img/icon/Footer/icons8-Instagram-100.png"></a>
-           </div>
-       </div>
-        <script src="SCRIPT/jquery-3.2.1.min.js"></script>
-        <script src="SCRIPT/bootstrap.js"></script>
-        <script src="SCRIPT/script.js"></script>         
-
-    </body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Отправка форм AJAX</title>
+</head>
+<body>
+	<form id="form">
+		<input type="text" name="name" placeholder="Ваше имя" required /><br />
+		<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
+		<button>Отправить</button>
+	</form>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="common.js"></script>
+</body>
 </html>
